@@ -1,7 +1,7 @@
 echo "disable frequency scaling not working with intel_pstate driver, as it doesn't provide userspace governor"
 echo "to enable userspace mode, you should use the older driver acpi-cpufreq, which is enabled automatically when intel_pstate is disabled"
 echo "Do following to disable intel_pstate"
-echo "1. sudo vim /default/grub"
+echo "1. sudo vim /etc/default/grub"
 echo "2. add option to intel_pstate=disable to variable GRUB_CMDLINE_LINUX_DEFAULT"
 echo "   .eg GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_pstate=disable""
 echo "3. sudo update-grub"
